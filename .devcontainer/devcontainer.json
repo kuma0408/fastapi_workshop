@@ -1,0 +1,16 @@
+// FastAPIを使うためのdevcontainer.jsonを書く
+{
+  "name": "FastAPI",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "extensions": [
+          "ms-python.python"
+        ]
+      }
+    }
+  },
+  "forwardPorts": [8000]
+}
